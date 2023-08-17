@@ -135,7 +135,7 @@ public class DefaultSubscriptionFeature implements SubscriptionFeature {
 
     @Override
     public ApiQps getApiQps() {
-        return new ApiQps(5L);
+        return new ApiQps(60L);
     }
 
     @Override
