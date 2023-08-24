@@ -38,7 +38,7 @@ interface ICoverImgUploaderProps extends IBasePropEditorProps {
 const officialImgParams = {
   method: CutMethod.CUT,
   w: 1440,
-  h: 480,
+  h: 800,
 };
 
 const customTips = {
@@ -61,7 +61,7 @@ export const CoverImgUploader: React.FC<React.PropsWithChildren<ICoverImgUploade
 
     if (type === IFileType.Custom) {
       coverUrl = getCellValueThumbSrc(file, {
-        h: 240 * (window.devicePixelRatio || 1),
+        h: 400 * (window.devicePixelRatio || 1),
         formatToJPG: isGif({ name: file.name, type: file.mimeType }),
       });
     } else {
