@@ -67,7 +67,7 @@ function getFileMethod(option: IImageSrcOption) {
 
 function getFileSize(option: IImageThumbOption) {
   const w = option.w ? option.w : option.size;
-  const h = option.h ? option.h : option.size;
+  const h = 800
   //NOTE: w and h must be integer
   if (w && h) {
     return `/w/${Math.floor(w)}/h/${Math.floor(h)}`;
